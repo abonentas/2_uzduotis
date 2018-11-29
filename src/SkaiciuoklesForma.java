@@ -30,8 +30,8 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        plusButton = new javax.swing.JButton();
+        minusButton = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,11 +48,11 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
 
         jLabel2.setText("Antras skaičius");
 
-        jButton1.setText("+");
-        jButton1.setToolTipText("add");
+        plusButton.setText("+");
+        plusButton.setToolTipText("add");
 
-        jButton2.setText("-");
-        jButton2.setToolTipText("subtract");
+        minusButton.setText("-");
+        minusButton.setToolTipText("subtract");
 
         jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         jLabel3.setText("Atsakymas yra : ");
@@ -69,9 +69,9 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton1)
+                                    .addComponent(plusButton)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                                    .addComponent(jButton2))
+                                    .addComponent(minusButton))
                                 .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING))
                             .addGroup(layout.createSequentialGroup()
@@ -98,8 +98,8 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(plusButton)
+                    .addComponent(minusButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addContainerGap(75, Short.MAX_VALUE))
@@ -148,12 +148,12 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton minusButton;
+    private javax.swing.JButton plusButton;
     // End of variables declaration//GEN-END:variables
 }

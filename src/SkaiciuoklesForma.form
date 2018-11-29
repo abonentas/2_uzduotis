@@ -32,9 +32,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="plusButton" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace pref="43" max="32767" attributes="0"/>
-                                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="minusButton" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
                               <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
@@ -71,8 +71,8 @@
               <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="plusButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="minusButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
@@ -99,13 +99,13 @@
         <Property name="text" type="java.lang.String" value="Antras skai&#x10d;ius"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="plusButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
         <Property name="toolTipText" type="java.lang.String" value="add"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="minusButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
         <Property name="toolTipText" type="java.lang.String" value="subtract"/>
