@@ -36,20 +36,32 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
         plusButton = new javax.swing.JButton();
         minusButton = new javax.swing.JButton();
         AnswerLabel = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Skaičiuotuvas");
         setAlwaysOnTop(true);
+        setBackground(new java.awt.Color(153, 153, 153));
+        setMinimumSize(new java.awt.Dimension(400, 300));
+        getContentPane().setLayout(null);
+        getContentPane().add(FirstNumberText);
+        FirstNumberText.setBounds(109, 87, 125, 20);
 
         secondNumberText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 secondNumberTextActionPerformed(evt);
             }
         });
+        getContentPane().add(secondNumberText);
+        secondNumberText.setBounds(109, 135, 125, 20);
 
         jLabel1.setText("Pirmas skaičius");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(109, 67, 98, 14);
 
         jLabel2.setText("Antras skaičius");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(109, 118, 97, 14);
 
         plusButton.setText("+");
         plusButton.setToolTipText("add");
@@ -58,6 +70,8 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
                 plusButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(plusButton);
+        plusButton.setBounds(109, 173, 43, 23);
 
         minusButton.setText("-");
         minusButton.setToolTipText("subtract");
@@ -66,49 +80,18 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
                 minusButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(minusButton);
+        minusButton.setBounds(195, 173, 39, 23);
 
         AnswerLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         AnswerLabel.setText("Atsakymas yra : ");
         AnswerLabel.setToolTipText("");
+        getContentPane().add(AnswerLabel);
+        AnswerLabel.setBounds(109, 207, 125, 18);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(109, 109, 109)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AnswerLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(plusButton)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                            .addComponent(minusButton))
-                        .addComponent(FirstNumberText, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(secondNumberText, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addContainerGap(166, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(FirstNumberText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addGap(3, 3, 3)
-                .addComponent(secondNumberText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(plusButton)
-                    .addComponent(minusButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(AnswerLabel)
-                .addContainerGap(75, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculator.png"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 400, 300);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -207,6 +190,7 @@ public class SkaiciuoklesForma extends javax.swing.JFrame {
     private javax.swing.JTextField FirstNumberText;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton minusButton;
     private javax.swing.JButton plusButton;
     private javax.swing.JTextField secondNumberText;
